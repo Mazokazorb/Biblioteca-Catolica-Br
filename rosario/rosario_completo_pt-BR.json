@@ -1,0 +1,733 @@
+{
+  "nome": "Rosário",
+  "idioma": "pt-BR",
+  "estrutura": {
+    "misterios_por_terco": 5,
+    "ave_marias_por_misterio": 10
+  },
+  "oracoes_iniciais": {
+    "abertura": "Em nome do Pai e do Filho e do Espírito Santo. Amém.",
+    "ato_de_contricao_opcoes": [
+      "Meu Deus: arrependo-me dos meus pecados de todo o meu coração. Escolhendo o caminho do mal e deixando de fazer o bem, pequei contra Vós a quem eu deveria amar sobre todas as coisas. Mas proponho firmemente, com Vosso auxílio, fazer penitência, não mais pecar e evitar tudo o que me leva ao pecado. Nosso Salvador Jesus Cristo sofreu e morreu por nós. Em Seu nome, meu Deus, Vos peço: tende compaixão de mim.",
+      "Ó meu Deus, arrependo-me dos meus pecados porque ofendi a Vós. Sei que eu deveria vos amar sobre todas as coisas. Ajudai-me a fazer penitência, a agir melhor e a evitar tudo quanto possa me levar ao pecado. Amém.",
+      "Senhor, meu Jesus Cristo, Deus e homem verdadeiro, Criador e Redentor meu, por serdes Vós quem sois, sumamente bom, digno de ser amado sobre todas as coisas, e porque Vos amo e estimo, muito me pesa, Senhor, de todo o meu coração, de Vos ter ofendido. Mas proponho firmemente, ajudado com os auxílios da vossa Divina Graça, emendar-me e nunca mais Vos tornar a ofender; e espero alcançar o perdão, pela Vossa infinita misericórdia. Amém.",
+      "(Ou qualquer oração espontânea demonstrando a Deus o seu arrependimento e a sua boa vontade para corrigir o seu comportamento e evitar cair novamente no pecado) ."
+    ],
+    "oferecimento": "Divino Jesus, nós vos oferecemos este terço que vamos rezar, contemplando os mistérios da nossa Redenção. Concedei-nos pela intercessão de Maria, vossa Mãe Santíssima, a quem nos dirigimos, as virtudes para bem rezá-lo e a graça de ganharmos as indulgências desta santa devoção. ( Pode-se acrescentar o que segue, e também intenções particulares: Ofereço-Vos também em desagravo dos pecados cometidos contra o Santíssimo Coração de Jesus e Imaculado Coração de Maria, pela conversão dos pecadores, pelas almas do Purgatório, pelas intenções do Santo Padre, pela santificação do Clero, pela santificação das famílias, pelas missões, pelos doentes, pelos agonizantes, por todos aqueles que pediram nossas orações, pela paz do mundo, pelo Brasil e por todas as nossas intenções particulares )",
+    "credo": "Creio em Deus Pai todo-poderoso, Criador do céu e da terra; e em Jesus Cristo, seu único Filho nosso Senhor, que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado, morto e sepultado; desceu à mansão dos mortos; ressuscitou ao terceiro dia; subiu aos céus; está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos. Creio no Espírito Santo, na santa Igreja Católica, na comunhão dos santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém!",
+    "pai_nosso": "Pai nosso que estais nos céus, santificado seja o vosso nome; venha a nós o vosso Reino; seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje; perdoai-nos as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal. Amém.",
+    "ave_maria": "Ave Maria, cheia de graça, o Senhor é convosco; bendita sois vós entre as mulheres, e bendito é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora de nossa morte. Amém.",
+    "gloria": "Glória ao Pai e ao Filho e ao Espírito Santo. Assim como era no princípio, agora e sempre. Amém!",
+    "jaculatoria": "Ó meu Jesus, perdoai-nos, livrai-nos do fogo do inferno, levai as almas todas para o céu, e socorrei principalmente as que mais precisarem.",
+    "nota_ave_marias": "São rezadas 3 Ave-Marias, uma a seguir a outra. A primeira: Saudemos a Virgem Maria, Filha do Eterno Pai. A segunda: Saudemos a Virgem Maria, Mãe do Verbo Encarnado. A terceira: Saudemos a Virgem Maria, Templo do Espírito Santo.",
+    "oferecimento_intencoes": "O arquivo permite acrescentar intenções particulares ao oferecimento.",
+    "agradecimento": "Infinitas graças vos damos, soberana Rainha, pelos benefícios que todos os dias recebemos de vossas mãos liberais. Dignai-vos, agora e sempre, tomar-nos debaixo de vosso poderoso amparo e para mais nos obrigar, vos saudamos com uma:",
+    "salve_rainha": "Salve, Rainha, Mãe de misericórdia, vida, doçura e esperança nossa, salve! A vós bradamos os degredados filhos de Eva. A vós suspiramos, gemendo e chorando, neste vale de lágrimas. Ei-a, pois, advogada nossa: esses vossos olhos misericordiosos a nós volvei, e depois deste desterro, mostrai-nos Jesus, bendito fruto do vosso ventre, ó clemente, ó piedosa, ó doce e sempre Virgem Maria. Rogai por nós, Santa Mãe de Deus, para que sejamos dignos das promessas de Cristo. Amém.",
+    "oracao_final": "Ó Deus, Vós nos concedeis recordar e celebrar com fé os mistérios da salvação, realizada por vosso filho. Que os Vossos filhos apoiados na reza do Rosário, possam conservar e meditar em seus corações as alegrias, os sofrimentos e a glória de Jesus, com Maria sua Mãe. Nós Vos pedimos pelo mesmo Jesus, Vosso Filho, na unidade do Espírito Santo. Amém"
+  },
+  "misterios": {
+    "gozosos": {
+      "dias": [
+        "segunda",
+        "sábado"
+      ],
+      "misterios": [
+        {
+          "numero": 1,
+          "titulo": "A Anunciação",
+          "meditacao": "No dia fixado por Deus, o anjo Gabriel entrou na casa de Maria, na Galiléia, e disse-lhe que o Espírito Santo desceria sobre ela e que seria a Mãe de Deus: \"Salve, cheia de graça, o Senhor é contigo. Bendita és tu entre todas as mulheres\". E Maria, humildemente, exclama: \"Eis aqui a serva do Senhor. Faça-se em mim segundo a tua palavra\".",
+          "passagem_biblica": {
+            "referencia": "Lc 1,28-38",
+            "texto": "E, entrando o anjo onde ela estava disse: Alegra-se, cheia de graça; o Senhor está contigo. Ela, porém, ao ouvir estas palavras, ficou intrigada e pôs-se a pensar que saudação seria essa. Disse-lhe então o anjo: Não temas, Maria; pois achaste graça diante de Deus. Eis que conceberás e darás à luz um filho, ao qual porás o nome de Jesus. Este será grande e será chamado filho do Altíssimo; o Senhor Deus lhe dará o trono de Davi seu pai; e reinará eternamente sobre a casa de Jacó, e o seu reino não terá fim. Então Maria perguntou ao anjo: Como se fará isso, uma vez que não conheço varão? Respondeu-lhe o anjo: Virá sobre ti o Espírito Santo, e o poder do Altíssimo te cobrirá com a sua sombra; por isso o que há de nascer será chamado santo, Filho de Deus. Eis que também Isabel, tua parenta concebeu um filho em sua velhice; e é este o sexto mês para aquela que era chamada estéril; porque para Deus nada será impossível. Disse então Maria. Eis aqui a serva do Senhor; cumpra-se em mim segundo a tua palavra."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ],
+          "virtude": "Humildade"
+        },
+        {
+          "numero": 2,
+          "titulo": "A Visitação",
+          "meditacao": "Tendo sido informada pelo anjo que Isabel, sua prima, iria ter um filho, Maria foi imediatamente visitá-la. Logo que se encontraram, Isabel saudou-a com as palavras: \"Bendita és tu entre as mulheres e bendito é o fruto do teu ventre\".",
+          "passagem_biblica": {
+            "referencia": "Lc 1,39-45",
+            "texto": "Naqueles dias levantou-se Maria, foi apressadamente à região montanhosa, a uma cidade de Judá, entrou em casa de Zacarias e saudou a Isabel. Ao ouvir Isabel a saudação de Maria, saltou a criancinha no seu ventre, e Isabel ficou cheia do Espírito Santo, e exclamou em alta voz: Bendita és tu entre as mulheres, e bendito é o fruto do teu ventre! E donde me provém isto, que venha visitar-me a mãe do meu Senhor? Pois logo que me soou aos ouvidos a voz da tua saudação, a criancinha saltou de alegria dentro de mim. Bem-aventurada aquela que creu que se hão de cumprir as coisas que da parte do Senhor lhe foram ditas."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ],
+          "virtude": "Amor ao próximo"
+        },
+        {
+          "numero": 3,
+          "titulo": "A Natividade",
+          "meditacao": "Não encontrando hospedagem na cidade, Maria e José dirigiram-se a uma gruta perto de Belém. Ali, a Virgem Maria deu à luz o seu Filho, envolveu-o em panos e o colocou numa manjedoura. Logo chegaram os pastores para adorar o Menino.",
+          "passagem_biblica": {
+            "referencia": "Lc 2,4-11",
+            "texto": "Subiu também José, da Galiléia, da cidade de Nazaré, à cidade de Davi, chamada Belém, porque era da casa e família de Davi, a fim de alistar-se com Maria, sua esposa, que estava grávida. Enquanto estavam ali, chegou o tempo em que ela havia de dar à luz, e teve seu filho primogênito; envolveu-o em faixas e o deitou em uma manjedoura, porque não havia lugar para eles na estalagem. Ora, havia naquela mesma região pastores que estavam no campo, e guardavam o seu rebanho durante as vigílias da noite . E um anjo do Senhor apareceu-lhes, e a glória do Senhor os cercou de resplendor; pelo que se encheram de grande temor. O anjo, porém, lhes disse: Não temais, porquanto vos anuncio uma grande alegria que o será para todo o povo: É que vos nasceu hoje, na cidade de Davi, o Salvador, que é Cristo, o Senhor."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ],
+          "virtude": "Espírito de Pobreza"
+        },
+        {
+          "numero": 4,
+          "titulo": "A Apresentação",
+          "meditacao": "Quarenta dias após o nascimento do Deus Menino, a Sagrada Família subiu ao Templo para efetuar a purificação de Maria e consagrar o Menino Jesus a Deus. Enquanto ali estavam, o ancião Simeão reconheceu-O como Salvador e anunciou uma espada de dor para Nossa Senhora.",
+          "passagem_biblica": {
+            "referencia": "Lc 2,22-35",
+            "texto": "Quando se completaram os oito dias para ser circuncidado o menino, foi-lhe dado o nome de Jesus, que pelo anjo lhe fora posto antes de ser concebido. Terminados os dias da purificação, segundo a lei de Moisés, levaram-no a Jerusalém, para apresentá-lo ao Senhor (conforme está escrito na lei do Senhor: Todo primogênito será consagrado ao Senhor), e para oferecerem um sacrifício segundo o disposto na lei do Senhor: um par de rolas, ou dois pombinhos. Ora, havia em Jerusalém um homem cujo nome era Simeão; e este homem, justo e temente a Deus, esperava a consolação de Israel; e o Espírito Santo estava sobre ele. E lhe fora revelado pelo Espírito Santo que ele não morreria antes de ver o Cristo do Senhor. Assim pelo Espírito foi ao templo e quando os pais trouxeram o menino Jesus, para fazerem por ele segundo o costume da lei, Simeão o tomou em seus braços, e louvou a Deus, e disse: Agora, Senhor, despedes em paz o teu servo, segundo a tua palavra,pois os meus olhos já viram a tua salvação,a qual tu preparaste ante a face de todos os povos, luz para revelação aos gentios e para glória do teu povo Israel."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ],
+          "virtude": "Obediência à vontade de Deus"
+        },
+        {
+          "numero": 5,
+          "titulo": "Jesus entre os Doutores",
+          "meditacao": "Quando Jesus tinha doze anos, Maria e José perderam-no em Jerusalém. Procurado durante três dias, foi encontrado no Templo, sentado entre os doutores da Lei, que estavam admirados com a sabedoria do Menino.",
+          "passagem_biblica": {
+            "referencia": "Lc 2,42-51",
+            "texto": "Quando Jesus completou doze anos, subiram eles segundo o costume da festa e, terminados aqueles dias, ao regressarem, ficou o menino Jesus em Jerusalém sem o saberem seus pais julgando, porém, que estivesse entre os companheiros de viagem, andaram caminho de um dia, e o procuravam entre os parentes e conhecidos e não o achando, voltaram a Jerusalém em busca dele. E aconteceu que, passados três dias, o acharam no templo, sentado no meio dos doutores, ouvindo-os, e interrogando-os. E todos os que o ouviam se admiravam da sua inteligência e das suas respostas. Quando o viram, ficaram maravilhados, e disse-lhe sua mãe: Filho, por que procedeste assim para conosco? Eis que teu pai e eu ansiosos te procurávamos. Respondeu-lhes ele: Por que me procuráveis? Não sabíeis que eu devia estar na casa de meu Pai? Eles, porém, não entenderam as palavras que lhes dissera. Então, descendo com eles, foi para Nazaré, e era-lhes sujeito. E sua mãe guardava todas estas coisas em seu coração."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ],
+          "virtude": "Fidelidade à vocação"
+        }
+      ]
+    },
+    "dolorosos": {
+      "dias": [
+        "terça",
+        "sexta"
+      ],
+      "misterios": [
+        {
+          "numero": 1,
+          "titulo": "A Agonia do Horto",
+          "meditacao": "Enquanto Jesus rezava no horto de Getsêmani, o pensamento do que O esperava no dia seguinte, fê-lo suar sangue. Embora a Sua alma sentisse a angústia da morte, submeteu-se aos planos de seu Pai, dizendo: \"Faça-se a Tua vontade\".",
+          "passagem_biblica": {
+            "referencia": "Mc 14,32-36",
+            "texto": "Então chegaram a um lugar chamado Getsêmani, e disse Jesus a seus discípulos: Sentai-vos aqui, enquanto eu oro. E levou consigo a Pedro, a Tiago e a João, e começou a ter pavor e a angustiar-se e disse-lhes: A minha alma está triste até a morte; ficai aqui e vigiai. Adiantando-se um pouco, prostrou-se em terra; e orava para que, se fosse possível, passasse dele aquela hora. E dizia: Aba, Pai, tudo te é possível; afasta de mim este cálice. Todavia não seja o que eu quero, mas o que tu queres."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ],
+          "virtude": "Espírito de oração"
+        },
+        {
+          "numero": 2,
+          "titulo": "A Flagelação",
+          "meditacao": "Embora Pilatos estivesse convencido da inocência de Jesus, mandou açoitá-Lo, julgando que os chefes dos judeus ficariam satisfeitos apenas com esse castigo e deixariam de pedir a pena de morte\".",
+          "passagem_biblica": {
+            "referencia": "Jo 19,1",
+            "texto": "Nisso, pois, Pilatos tomou a Jesus, e mandou açoitá-lo."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ],
+          "virtude": "Modéstia e pureza"
+        },
+        {
+          "numero": 3,
+          "titulo": "A Coroação de Espinhos",
+          "meditacao": "Os cruéis soldados de Pilatos, depois de açoitarem o Senhor, teceram uma coroa de espinhos e colocaram-na sobre a Sua cabeça. Em seguida, colocaram-lhe na mão uma vara, ridicularizando Sua afirmação de ser o verdadeiro Rei.",
+          "passagem_biblica": {
+            "referencia": "Jo 19,2",
+            "texto": "E os soldados, tecendo uma coroa de espinhos, puseram-lhe sobre a cabeça, e lhe vestiram um manto de púrpura, e chegando-se a ele, diziam: Salve, rei dos judeus! e davam-lhe bofetadas."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ],
+          "virtude": "Coragem"
+        },
+        {
+          "numero": 4,
+          "titulo": "A Cruz Carregada",
+          "meditacao": "Pilatos pronunciou a pena de morte e uma cruz pesada foi posta nos ombros feridos de Nosso Senhor. Frágil e machucado, Jesus caiu três vezes no caminho do Calvário enquanto a multidão o insultava e amaldiçoava.",
+          "passagem_biblica": {
+            "referencia": "Jo 19,16-17",
+            "texto": "Então lho entregou para ser crucificado. Tomaram, pois, a Jesus; e ele, carregando a sua própria cruz, saiu para o lugar chamado Caveira, que em hebraico se chama Gólgota."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ],
+          "virtude": "Paciência no sofrimento"
+        },
+        {
+          "numero": 5,
+          "titulo": "A Crucificação",
+          "meditacao": "No Calvário, estava presente Maria, enquanto Jesus era despido e crucificado. A espada anunciada por Simeão trespassou o seu coração materno enquanto presenciava a agonia do seu único e querido Filho, sacrificado por nossos pecados.",
+          "passagem_biblica": {
+            "referencia": "Lc 23,44-46",
+            "texto": "Era já quase a hora sexta, e houve trevas em toda a terra até a hora nona, pois o sol se escurecera e rasgou-se ao meio o véu do santuário. Jesus, clamando com grande voz, disse: Pai, nas tuas mãos entrego o meu espírito. E, havendo dito isso, expirou."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ],
+          "virtude": "Abnegação de si mesmo"
+        }
+      ]
+    },
+    "gloriosos": {
+      "dias": [
+        "domingo",
+        "quarta"
+      ],
+      "misterios": [
+        {
+          "numero": 1,
+          "titulo": "A Ressurreição",
+          "meditacao": "A RESSUREIÇÃO Bem cedo, na manhã do primeiro domingo da Páscoa, Jesus ressuscitou. Algumas mulheres foram ao Seu sepulcro e encontraram a pedra removida. Então, um anjo lhes disse que Jesus não estava mais ali... segundo a Sua própria profecia, havia ressuscitado!",
+          "passagem_biblica": {
+            "referencia": "Mt 28,1-6",
+            "texto": "No fim do sábado, quando já despontava o primeiro dia da semana, Maria Madalena e a outra Maria foram ver o sepulcro. E eis que houvera um grande terremoto; pois um anjo do Senhor descera do céu e, chegando-se, removera a pedra e estava sentado sobre ela. O seu aspecto era como um relâmpago, e as suas vestes brancas como a neve. E de medo dele tremeram os guardas, e ficaram como mortos. Mas o anjo disse às mulheres: Não temais vós; pois eu sei que buscais a Jesus, que foi crucificado. Não está aqui, porque ressurgiu, como ele disse."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ],
+          "virtude": "Fé"
+        },
+        {
+          "numero": 2,
+          "titulo": "A Ascensão",
+          "meditacao": "A Igreja celebra a ascensão quarenta dias depois da ressurreição. Jesus deu as últimas instruções aos discípulos no jardim das Oliveiras e os abençoou. Ali encontrava-se também Nossa Senhora que, juntamente com os Apóstolos, fixava os olhos Nele enquanto se elevava aos céus.",
+          "passagem_biblica": {
+            "referencia": "At 1,4-11",
+            "texto": "Estando com eles, ordenou-lhes que não se ausentassem de Jerusalém, mas que esperassem a promessa do Pai, a qual (disse ele) de mim ouvistes. Porque, na verdade, João batizou em água, mas vós sereis batizados no Espírito Santo, dentro de poucos dias. Aqueles, pois, que se haviam reunido perguntavam-lhe, dizendo: Senhor, é nesse tempo que restauras o reino a Israel? Respondeu-lhes: A vós não vos compete saber os tempos ou as épocas, que o Pai reservou à sua própria autoridade. Mas recebereis poder, ao descer sobre vós o Espírito Santo, e ser-me-eis testemunhas, tanto em Jerusalém, como em toda a Judéia e Samaria, e até os confins da terra. Tendo ele dito estas coisas, foi levado para cima, enquanto eles olhavam, e uma nuvem o recebeu, ocultando-o a seus olhos. Estando eles com os olhos fitos no céu, enquanto ele subia, eis que junto deles apareceram dois varões vestidos de branco, os quais lhes disseram: Varões galileus, por que ficais aí olhando para o céu? Esse Jesus, que dentre vós foi elevado para o céu, há de vir assim como para o céu o vistes ir."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ],
+          "virtude": "Esperança"
+        },
+        {
+          "numero": 3,
+          "titulo": "A Vinda do Espírito Santo",
+          "meditacao": "Dez dias após a Ascensão, os apóstolos estavam reunidos no Cenáculo. De repente, ouviram um vento fortíssimo e línguas de fogo pousaram sobre eles. Assim, o Senhor lhes enviou o Espírito Santo que havia prometido.",
+          "passagem_biblica": {
+            "referencia": "At 2,1-18",
+            "texto": "Ao cumprir-se o dia de Pentecostes, estavam todos reunidos no mesmo lugar. De repente veio do céu um ruído, como que de um vento impetuoso, e encheu toda a casa onde estavam sentados. E lhes apareceram umas línguas como que de fogo, que se distribuíam, e sobre cada um deles pousou uma. E todos ficaram cheios do Espírito Santo, e começaram a falar noutras línguas, conforme o Espírito lhes concedia que falassem. Habitavam então em Jerusalém judeus, homens piedosos, de todas as nações que há debaixo do céu. Ouvindo-se, pois, aquele ruído, ajuntou-se a multidão; e estava confusa, porque cada um os ouvia falar na sua própria língua. E todos pasmavam e se admiravam, dizendo uns aos outros: Pois quê! não são galileus todos esses que estão falando? Como é, pois, que os ouvimos falar cada um na própria língua em que nascemos? Nós, partos, medos, e elamitas; e os que habitamos a Mesopotâmia, a Judéia e a Capadócia, o Ponto e a Ásia, a Frígia e a Panfília, o Egito e as partes da Líbia próximas a Cirene, e forasteiros romanos, tanto judeus como prosélitos, cretenses e árabes - ouvimo-los em nossas línguas, falar das grandezas de Deus. E todos pasmavam e estavam perplexos, dizendo uns aos outros: Que quer dizer isto? E outros, zombando, diziam: Estão cheios de mosto. Então Pedro, pondo-se em pé com os onze, levantou a voz e disse-lhes: varões judeus e todos os que habitais em Jerusalém, seja-vos isto notório, e escutai as minhas palavras. Pois estes homens não estão embriagados, como vós pensais, visto que é apenas a terceira hora do dia. Mas isto é o que foi dito pelo profeta Joel: “E acontecerá nos últimos dias, diz o Senhor, que derramarei do meu Espírito sobre toda a carne; e os vossos filhos e as vossas filhas profetizarão, os vossos jovens terão visões, os vossos anciãos terão sonhos, e sobre os meus servos e sobre as minhas servas derramarei do meu Espírito naqueles dias, e eles profetizarão."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ],
+          "virtude": "Sabedoria, amor, zelo, fortaleza"
+        },
+        {
+          "numero": 4,
+          "titulo": "A Assunção",
+          "meditacao": "Por um privilégio único, a Virgem Maria foi preservada de toda a mancha do pecado e concebida imaculada. Por conseguinte, alguns anos após a ascensão de seu Filho, foi levada em corpo e alma ao céu pelos anjos de Deus.",
+          "passagem_biblica": {
+            "referencia": "Lc 1,48-49",
+            "texto": "Desde agora as gerações hão de chamar-me de bendita. O Poderoso fez em mim maravilhas e Santo é o seu nome!"
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ],
+          "virtude": "Felicidade eterna"
+        },
+        {
+          "numero": 5,
+          "titulo": "A Coroação de Nossa Senhora",
+          "meditacao": "Coroada Rainha do Céu por seu Filho, Nossa Senhora reina lá eternamente. Mediante a sua intercessão com Cristo Rei, sempre rogará por nós para que alcancemos a vida eterna. Comprou-nos pelo Fruto do seu ventre no sacrifício da Cruz.",
+          "passagem_biblica": {
+            "referencia": "Ap 12,1",
+            "texto": "E viu-se um grande sinal no céu: uma mulher vestida do sol, tendo a lua debaixo dos seus pés, e uma coroa de doze estrelas sobre a sua cabeça."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ],
+          "virtude": "Devoção a Maria e perseverança final"
+        }
+      ]
+    },
+    "luminosos": {
+      "dias": [
+        "quinta"
+      ],
+      "misterios": [
+        {
+          "numero": 1,
+          "titulo": "O Batismo no Rio Jordão",
+          "meditacao": "O BATISMO NO RIO JORDÃO Neste mistério contemplamos Seu batismo. Enquanto Cristo desce à água do rio, como inocente que se faz pecador por nós, o céu abre-se e a voz do Pai proclama-o Filho dileto, ao mesmo tempo que o Espírito vem sobre Ele para investi-lo na missão que o espera.",
+          "passagem_biblica": {
+            "referencia": "Mt 3,13-17",
+            "texto": "Então veio Jesus da Galiléia ter com João, junto do Jordão, para ser batizado por ele. Mas João o impedia, dizendo: Eu é que preciso ser batizado por ti, e tu vens a mim? Jesus, porém, lhe Respondeu: Consente agora; porque assim nos convém cumprir toda a justiça. Então ele consentiu. Batizado que foi Jesus, saiu logo da água e eis que se lhe abriram os céus, e viu o Espírito Santo de Deus descendo como uma pomba e vindo sobre ele; e eis que uma voz dos céus dizia: Este é o meu Filho amado, em quem me comprazo."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Bodas de Caná",
+          "meditacao": "Neste mistério contemplamos o início dos sinais em Caná, quando Cristo, transformando a água em vinho, abre à fé o coração dos discípulos graças à intervenção de Maria, a primeira entre os crentes.",
+          "passagem_biblica": {
+            "referencia": "Jo 2,1-11",
+            "texto": "Três dias depois, houve um casamento em Caná da Galiléia, e estava ali a mãe de Jesus e foi também convidado Jesus com seus discípulos para o casamento. E, tendo acabado o vinho, a mãe de Jesus lhe disse: Eles não têm vinho. Respondeu-lhes Jesus: Mulher, que tenho eu contigo? Ainda não é chegada a minha hora. Disse então sua mãe aos serventes: Fazei tudo quanto ele vos disser. Ora, estavam ali postas seis talhas de pedra, para as purificações dos judeus, e em cada uma cabiam duas ou três medidas. Ordenou-lhe Jesus: Enchei de água essas talhas. E encheram- nas até em cima. Então lhes disse: Tirai agora, e levai ao mestre-sala. E eles o fizeram. Quando o mestre-sala provou a água tornada em vinho, não sabendo donde era, se bem que o sabiam os serventes que tinham tirado a água, chamou o mestre-sala ao noivo e lhe disse: Todo homem põe primeiro o vinho bom e, quando já têm bebido bem, então o inferior; mas tu guardaste até agora o bom vinho. Assim deu Jesus início aos seus sinais em Caná da Galiléia, e manifestou a sua glória; e os seus discípulos creram nele."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "Anúncio do Reino de Deus e o Convite à Conversão",
+          "meditacao": "ANÚNCIO DO REINO DE DEUS E O CONVITE À CONVERSÃO Neste mistério contemplamos a pregação com a qual Jesus anuncia o advento do Reino de Deus e convida à conversão, perdoando os pecados de quem a Ele se dirige com humilde confiança, início do ministério de misericórdia que Ele prosseguirá exercendo até ao fim do mundo, especialmente através do sacramento da Reconciliação confiado à sua Igreja.",
+          "passagem_biblica": {
+            "referencia": "Mc 1,14-15",
+            "texto": "Ora, depois que João foi entregue, veio Jesus para a Galiléia pregando o evangelho de Deus e dizendo: O tempo está cumprido, e é chegado o reino de Deus. Arrependei-vos, e crede no evangelho. ou Mc 2,3-13 Nisso vieram alguns a trazer-lhe um paralítico, carregado por quatro e não podendo aproximar-se dele, por causa da multidão, descobriram o telhado onde estava e, fazendo uma abertura, baixaram o leito em que jazia o paralítico. E Jesus, vendo-lhes a fé, disse ao paralítico: Filho, perdoados são os teus pecados. Ora, estavam ali sentados alguns dos escribas, que arrazoavam em seus corações, dizendo: Por que fala assim este homem? Ele blasfema. Quem pode perdoar pecados senão um só, que é Deus? Mas Jesus logo percebeu em seu espírito que eles assim arrazoavam dentro de si, e perguntou-lhes: Por que arrazoais desse modo em vossos corações? Qual é mais fácil? dizer ao paralítico: Perdoados são os teus pecados; ou dizer: Levanta-te, toma o teu leito, e anda? Ora, para que saibais que o Filho do homem tem sobre a terra autoridade para perdoar pecados ( disse ao paralítico ), a ti te digo, levanta-te, toma o teu leito, e vai para tua casa. Então ele se levantou e, tomando logo o leito, saiu à vista de todos; de modo que todos pasmavam e glorificavam a Deus, dizendo: Nunca vimos coisa semelhante. Outra vez saiu Jesus para a beira do mar; e toda a multidão ia ter com ele, e ele os ensinava. ou Lc 7,47-48 Por isso te digo: Perdoados lhe são os pecados, que são muitos; porque ela muito amou; mas aquele a quem pouco se perdoa, pouco ama. E disse a ela: Perdoados são os teus pecados. Mas os que estavam com ele à mesa começaram a dizer entre si: Quem é este que até perdoa pecados? ou Jo 20,22-23 Disse-lhes, então, Jesus segunda vez: Paz seja convosco; assim como o Pai me enviou, também eu vos envio a vós. E havendo dito isso, assoprou sobre eles, e disse-lhes: Recebei o Espírito Santo, àqueles a quem perdoardes os pecados, são-lhes perdoados; e àqueles a quem os retiverdes, são-lhes retidos."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "A Transfiguração",
+          "meditacao": "Neste mistério da luz por excelência, contemplamos a Transfiguração que, segundo a tradição, se deu no Monte Tabor. A glória da Divindade reluz no rosto de Cristo, enquanto o Pai o acredita aos Apóstolos extasiados para que o \"escutem\" (cf. Lc 9, 35 par) e se disponham a viver com Ele o momento doloroso da Paixão, a fim de chegarem com Ele à glória da Ressurreição e a uma vida transfigurada pelo Espírito Santo.",
+          "passagem_biblica": {
+            "referencia": "Lc 9,28-35",
+            "texto": "Cerca de oito dias depois de ter proferido essas palavras, tomou Jesus consigo a Pedro, a João e a Tiago, e subiu ao monte para orar. Enquanto ele orava, mudou-se a aparência do seu rosto, e a sua roupa tornou-se branca e resplandecente. E eis que estavam falando com ele dois varões, que eram Moisés e Elias, os quais apareceram com glória, e falavam da sua partida que estava para cumprir-se em Jerusalém. Ora, Pedro e os que estavam com ele se haviam deixado vencer pelo sono; despertando, porém, viram a sua glória e os dois varões que estavam com ele. E, quando estes se apartavam dele, disse Pedro a Jesus: Mestre, bom é estarmos nós aqui: façamos, pois, três cabanas, uma para ti, uma para Moisés, e uma para Elias, não sabendo o que dizia. Enquanto ele ainda falava, veio uma nuvem que os cobriu; e se atemorizaram ao entrarem na nuvem. E da nuvem saiu uma voz que dizia: Este é o meu Filho, o meu eleito; a ele ouvi."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "A Instituição da Eucaristia, Expressão Sacramental do Mistério Pascal",
+          "meditacao": "A INSTITUIÇÃO DA EUCARISTIA, EXPRESSÃO SACRAMENTAL DO MISTÉRIO PASCAL Neste mistério, contemplamos, enfim, a instituição da Eucaristia, na qual Cristo Se faz alimento com o seu Corpo e o seu Sangue sob os sinais do pão e do vinho, testemunhando \"até ao extremo\" o seu amor pela humanidade ( Jo 13, 1), por cuja salvação Se oferecerá em sacrifício.",
+          "passagem_biblica": {
+            "referencia": "Jo 13,1",
+            "texto": "Antes da festa da páscoa, sabendo Jesus que era chegada a sua hora de passar deste mundo para o Pai, e havendo amado os seus que estavam no mundo, amou-os até o fim."
+          },
+          "pausa_silencio": true,
+          "sequencia": [
+            {
+              "tipo": "oracao",
+              "nome": "Pai Nosso",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Ave Maria",
+              "quantidade": 10
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Glória ao Pai",
+              "quantidade": 1
+            },
+            {
+              "tipo": "oracao",
+              "nome": "Jaculatória",
+              "quantidade": 1
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "oracoes_finais": {
+    "agradecimento": "Infinitas graças vos damos, soberana Rainha, pelos benefícios que todos os dias recebemos de vossas mãos liberais. Dignai-vos, agora e sempre, tomar-nos debaixo de vosso poderoso amparo e para mais nos obrigar, vos saudamos com uma:",
+    "salve_rainha": "Salve, Rainha, Mãe de misericórdia, vida, doçura e esperança nossa, salve! A vós bradamos os degredados filhos de Eva. A vós suspiramos, gemendo e chorando, neste vale de lágrimas. Ei-a, pois, advogada nossa: esses vossos olhos misericordiosos a nós volvei, e depois deste desterro, mostrai-nos Jesus, bendito fruto do vosso ventre, ó clemente, ó piedosa, ó doce e sempre Virgem Maria. Rogai por nós, Santa Mãe de Deus, para que sejamos dignos das promessas de Cristo. Amém.",
+    "oracao_final": "Ó Deus, Vós nos concedeis recordar e celebrar com fé os mistérios da salvação, realizada por vosso filho. Que os Vossos filhos apoiados na reza do Rosário, possam conservar e meditar em seus corações as alegrias, os sofrimentos e a glória de Jesus, com Maria sua Mãe. Nós Vos pedimos pelo mesmo Jesus, Vosso Filho, na unidade do Espírito Santo. Amém"
+  },
+  "fontes_locais": [
+    "misterios_alegria.htm",
+    "misterios_dor.htm",
+    "misterios_gloria.htm",
+    "misterios_luz.htm",
+    "ajuda_rosario.htm"
+  ],
+  "observacoes": [
+    "Os quatro conjuntos de mistérios foram estruturados a partir dos HTML fornecidos.",
+    "A ajuda_rosario.htm contém recomendações de São João Paulo II sobre a enunciação do mistério, a Palavra de Deus e o silêncio.",
+    "Pai-Nosso e Ave-Maria são incluídos em texto tradicional para tornar o JSON utilizável; nos HTML dos mistérios, eles aparecem principalmente como títulos/instruções."
+  ]
+}

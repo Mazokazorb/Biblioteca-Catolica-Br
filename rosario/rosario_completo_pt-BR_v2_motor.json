@@ -1,0 +1,1910 @@
+{
+  "tipo": "devocional",
+  "versao_modelo": "1.0",
+  "id": "rosario",
+  "metadados": {
+    "nome": "Rosário",
+    "idioma": "pt-BR",
+    "descricao": "Rosário completo estruturado para execução por um motor de devocionais.",
+    "fonte_modelo": "rosario_completo_pt-BR.json"
+  },
+  "configuracao": {
+    "personalizavel": true,
+    "salvar_progresso": true,
+    "permitir_pular_etapas": true,
+    "permitir_voltar": true,
+    "permitir_pausar": true,
+    "mostrar_contador": true
+  },
+  "variaveis": {
+    "atual": "Contador da repetição atual.",
+    "total": "Quantidade total de repetições da etapa ou grupo.",
+    "misterio_atual": "Número do mistério dentro do terço.",
+    "misterios_total": 5
+  },
+  "regras_do_motor": {
+    "repeticoes": "A propriedade 'repeticoes' executa a mesma etapa ou grupo várias vezes; o motor deve expor atual/total.",
+    "grupo": "Um grupo contém uma sequência e pode ser repetido. Ao terminar a sequência interna, o motor retorna ao início do grupo até atingir o total.",
+    "ordem": "A sequência é executada na ordem em que os itens aparecem.",
+    "pausa": "Uma etapa do tipo 'silencio' pode ter duracao em segundos.",
+    "personalizacao": "O usuário pode alterar repetições sem duplicar conteúdo.",
+    "contador": "Quando mostrar_contador=true, a interface pode exibir {{atual}}/{{total}}."
+  },
+  "oracoes_iniciais": [
+    {
+      "id": "abertura",
+      "tipo": "oracao",
+      "conteudo": {
+        "titulo": "Abertura",
+        "texto": "Em nome do Pai e do Filho e do Espírito Santo. Amém."
+      },
+      "repeticoes": 1
+    },
+    {
+      "id": "ato_de_contricao_opcoes",
+      "tipo": "oracao",
+      "conteudo": {
+        "titulo": "Ato De Contricao Opcoes",
+        "texto": "Meu Deus: arrependo-me dos meus pecados de todo o meu coração. Escolhendo o caminho do mal e deixando de fazer o bem, pequei contra Vós a quem eu deveria amar sobre todas as coisas. Mas proponho firmemente, com Vosso auxílio, fazer penitência, não mais pecar e evitar tudo o que me leva ao pecado. Nosso Salvador Jesus Cristo sofreu e morreu por nós. Em Seu nome, meu Deus, Vos peço: tende compaixão de mim.\n\nÓ meu Deus, arrependo-me dos meus pecados porque ofendi a Vós. Sei que eu deveria vos amar sobre todas as coisas. Ajudai-me a fazer penitência, a agir melhor e a evitar tudo quanto possa me levar ao pecado. Amém.\n\nSenhor, meu Jesus Cristo, Deus e homem verdadeiro, Criador e Redentor meu, por serdes Vós quem sois, sumamente bom, digno de ser amado sobre todas as coisas, e porque Vos amo e estimo, muito me pesa, Senhor, de todo o meu coração, de Vos ter ofendido. Mas proponho firmemente, ajudado com os auxílios da vossa Divina Graça, emendar-me e nunca mais Vos tornar a ofender; e espero alcançar o perdão, pela Vossa infinita misericórdia. Amém.\n\n(Ou qualquer oração espontânea demonstrando a Deus o seu arrependimento e a sua boa vontade para corrigir o seu comportamento e evitar cair novamente no pecado) ."
+      },
+      "repeticoes": 1
+    },
+    {
+      "id": "oferecimento",
+      "tipo": "oracao",
+      "conteudo": {
+        "titulo": "Oferecimento",
+        "texto": "Divino Jesus, nós vos oferecemos este terço que vamos rezar, contemplando os mistérios da nossa Redenção. Concedei-nos pela intercessão de Maria, vossa Mãe Santíssima, a quem nos dirigimos, as virtudes para bem rezá-lo e a graça de ganharmos as indulgências desta santa devoção. ( Pode-se acrescentar o que segue, e também intenções particulares: Ofereço-Vos também em desagravo dos pecados cometidos contra o Santíssimo Coração de Jesus e Imaculado Coração de Maria, pela conversão dos pecadores, pelas almas do Purgatório, pelas intenções do Santo Padre, pela santificação do Clero, pela santificação das famílias, pelas missões, pelos doentes, pelos agonizantes, por todos aqueles que pediram nossas orações, pela paz do mundo, pelo Brasil e por todas as nossas intenções particulares )"
+      },
+      "repeticoes": 1
+    },
+    {
+      "id": "credo",
+      "tipo": "oracao",
+      "conteudo": {
+        "titulo": "Credo",
+        "texto": "Creio em Deus Pai todo-poderoso, Criador do céu e da terra; e em Jesus Cristo, seu único Filho nosso Senhor, que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado, morto e sepultado; desceu à mansão dos mortos; ressuscitou ao terceiro dia; subiu aos céus; está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos. Creio no Espírito Santo, na santa Igreja Católica, na comunhão dos santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém!"
+      },
+      "repeticoes": 1
+    },
+    {
+      "id": "pai_nosso",
+      "tipo": "oracao",
+      "conteudo": {
+        "titulo": "Pai Nosso",
+        "texto": "Pai nosso que estais nos céus, santificado seja o vosso nome; venha a nós o vosso Reino; seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje; perdoai-nos as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal. Amém."
+      },
+      "repeticoes": 1
+    },
+    {
+      "id": "ave_maria",
+      "tipo": "oracao",
+      "conteudo": {
+        "titulo": "Ave Maria",
+        "texto": "Ave Maria, cheia de graça, o Senhor é convosco; bendita sois vós entre as mulheres, e bendito é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora de nossa morte. Amém."
+      },
+      "repeticoes": 1
+    },
+    {
+      "id": "gloria",
+      "tipo": "oracao",
+      "conteudo": {
+        "titulo": "Gloria",
+        "texto": "Glória ao Pai e ao Filho e ao Espírito Santo. Assim como era no princípio, agora e sempre. Amém!"
+      },
+      "repeticoes": 1
+    },
+    {
+      "id": "jaculatoria",
+      "tipo": "oracao",
+      "conteudo": {
+        "titulo": "Jaculatoria",
+        "texto": "Ó meu Jesus, perdoai-nos, livrai-nos do fogo do inferno, levai as almas todas para o céu, e socorrei principalmente as que mais precisarem."
+      },
+      "repeticoes": 1
+    },
+    {
+      "id": "nota_ave_marias",
+      "tipo": "oracao",
+      "conteudo": {
+        "titulo": "Nota Ave Marias",
+        "texto": "São rezadas 3 Ave-Marias, uma a seguir a outra. A primeira: Saudemos a Virgem Maria, Filha do Eterno Pai. A segunda: Saudemos a Virgem Maria, Mãe do Verbo Encarnado. A terceira: Saudemos a Virgem Maria, Templo do Espírito Santo."
+      },
+      "repeticoes": 1
+    },
+    {
+      "id": "oferecimento_intencoes",
+      "tipo": "oracao",
+      "conteudo": {
+        "titulo": "Oferecimento Intencoes",
+        "texto": "O arquivo permite acrescentar intenções particulares ao oferecimento."
+      },
+      "repeticoes": 1
+    },
+    {
+      "id": "agradecimento",
+      "tipo": "oracao",
+      "conteudo": {
+        "titulo": "Agradecimento",
+        "texto": "Infinitas graças vos damos, soberana Rainha, pelos benefícios que todos os dias recebemos de vossas mãos liberais. Dignai-vos, agora e sempre, tomar-nos debaixo de vosso poderoso amparo e para mais nos obrigar, vos saudamos com uma:"
+      },
+      "repeticoes": 1
+    },
+    {
+      "id": "salve_rainha",
+      "tipo": "oracao",
+      "conteudo": {
+        "titulo": "Salve Rainha",
+        "texto": "Salve, Rainha, Mãe de misericórdia, vida, doçura e esperança nossa, salve! A vós bradamos os degredados filhos de Eva. A vós suspiramos, gemendo e chorando, neste vale de lágrimas. Ei-a, pois, advogada nossa: esses vossos olhos misericordiosos a nós volvei, e depois deste desterro, mostrai-nos Jesus, bendito fruto do vosso ventre, ó clemente, ó piedosa, ó doce e sempre Virgem Maria. Rogai por nós, Santa Mãe de Deus, para que sejamos dignos das promessas de Cristo. Amém."
+      },
+      "repeticoes": 1
+    },
+    {
+      "id": "oracao_final",
+      "tipo": "oracao",
+      "conteudo": {
+        "titulo": "Oracao Final",
+        "texto": "Ó Deus, Vós nos concedeis recordar e celebrar com fé os mistérios da salvação, realizada por vosso filho. Que os Vossos filhos apoiados na reza do Rosário, possam conservar e meditar em seus corações as alegrias, os sofrimentos e a glória de Jesus, com Maria sua Mãe. Nós Vos pedimos pelo mesmo Jesus, Vosso Filho, na unidade do Espírito Santo. Amém"
+      },
+      "repeticoes": 1
+    }
+  ],
+  "misterios": {
+    "gozosos": {
+      "dias": [
+        "segunda",
+        "sábado"
+      ],
+      "tipo": "grupo",
+      "repeticoes": 1,
+      "sequencia": [
+        {
+          "id": "gozosos-misterio-1",
+          "tipo": "grupo",
+          "ordem": 1,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "A Anunciação",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "gozosos-1-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "A Anunciação",
+                "texto": "No dia fixado por Deus, o anjo Gabriel entrou na casa de Maria, na Galiléia, e disse-lhe que o Espírito Santo desceria sobre ela e que seria a Mãe de Deus: \"Salve, cheia de graça, o Senhor é contigo. Bendita és tu entre todas as mulheres\". E Maria, humildemente, exclama: \"Eis aqui a serva do Senhor. Faça-se em mim segundo a tua palavra\"."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "gozosos-1-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gozosos-1-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "gozosos-1-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gozosos-1-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "gozosos-misterio-2",
+          "tipo": "grupo",
+          "ordem": 2,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "A Visitação",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "gozosos-2-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "A Visitação",
+                "texto": "Tendo sido informada pelo anjo que Isabel, sua prima, iria ter um filho, Maria foi imediatamente visitá-la. Logo que se encontraram, Isabel saudou-a com as palavras: \"Bendita és tu entre as mulheres e bendito é o fruto do teu ventre\"."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "gozosos-2-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gozosos-2-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "gozosos-2-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gozosos-2-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "gozosos-misterio-3",
+          "tipo": "grupo",
+          "ordem": 3,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "A Natividade",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "gozosos-3-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "A Natividade",
+                "texto": "Não encontrando hospedagem na cidade, Maria e José dirigiram-se a uma gruta perto de Belém. Ali, a Virgem Maria deu à luz o seu Filho, envolveu-o em panos e o colocou numa manjedoura. Logo chegaram os pastores para adorar o Menino."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "gozosos-3-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gozosos-3-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "gozosos-3-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gozosos-3-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "gozosos-misterio-4",
+          "tipo": "grupo",
+          "ordem": 4,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "A Apresentação",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "gozosos-4-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "A Apresentação",
+                "texto": "Quarenta dias após o nascimento do Deus Menino, a Sagrada Família subiu ao Templo para efetuar a purificação de Maria e consagrar o Menino Jesus a Deus. Enquanto ali estavam, o ancião Simeão reconheceu-O como Salvador e anunciou uma espada de dor para Nossa Senhora."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "gozosos-4-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gozosos-4-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "gozosos-4-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gozosos-4-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "gozosos-misterio-5",
+          "tipo": "grupo",
+          "ordem": 5,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "Jesus entre os Doutores",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "gozosos-5-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "Jesus entre os Doutores",
+                "texto": "Quando Jesus tinha doze anos, Maria e José perderam-no em Jerusalém. Procurado durante três dias, foi encontrado no Templo, sentado entre os doutores da Lei, que estavam admirados com a sabedoria do Menino."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "gozosos-5-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gozosos-5-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "gozosos-5-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gozosos-5-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "dolorosos": {
+      "dias": [
+        "terça",
+        "sexta"
+      ],
+      "tipo": "grupo",
+      "repeticoes": 1,
+      "sequencia": [
+        {
+          "id": "dolorosos-misterio-1",
+          "tipo": "grupo",
+          "ordem": 1,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "A Agonia do Horto",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "dolorosos-1-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "A Agonia do Horto",
+                "texto": "Enquanto Jesus rezava no horto de Getsêmani, o pensamento do que O esperava no dia seguinte, fê-lo suar sangue. Embora a Sua alma sentisse a angústia da morte, submeteu-se aos planos de seu Pai, dizendo: \"Faça-se a Tua vontade\"."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "dolorosos-1-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "dolorosos-1-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "dolorosos-1-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "dolorosos-1-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "dolorosos-misterio-2",
+          "tipo": "grupo",
+          "ordem": 2,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "A Flagelação",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "dolorosos-2-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "A Flagelação",
+                "texto": "Embora Pilatos estivesse convencido da inocência de Jesus, mandou açoitá-Lo, julgando que os chefes dos judeus ficariam satisfeitos apenas com esse castigo e deixariam de pedir a pena de morte\"."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "dolorosos-2-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "dolorosos-2-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "dolorosos-2-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "dolorosos-2-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "dolorosos-misterio-3",
+          "tipo": "grupo",
+          "ordem": 3,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "A Coroação de Espinhos",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "dolorosos-3-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "A Coroação de Espinhos",
+                "texto": "Os cruéis soldados de Pilatos, depois de açoitarem o Senhor, teceram uma coroa de espinhos e colocaram-na sobre a Sua cabeça. Em seguida, colocaram-lhe na mão uma vara, ridicularizando Sua afirmação de ser o verdadeiro Rei."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "dolorosos-3-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "dolorosos-3-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "dolorosos-3-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "dolorosos-3-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "dolorosos-misterio-4",
+          "tipo": "grupo",
+          "ordem": 4,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "A Cruz Carregada",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "dolorosos-4-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "A Cruz Carregada",
+                "texto": "Pilatos pronunciou a pena de morte e uma cruz pesada foi posta nos ombros feridos de Nosso Senhor. Frágil e machucado, Jesus caiu três vezes no caminho do Calvário enquanto a multidão o insultava e amaldiçoava."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "dolorosos-4-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "dolorosos-4-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "dolorosos-4-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "dolorosos-4-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "dolorosos-misterio-5",
+          "tipo": "grupo",
+          "ordem": 5,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "A Crucificação",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "dolorosos-5-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "A Crucificação",
+                "texto": "No Calvário, estava presente Maria, enquanto Jesus era despido e crucificado. A espada anunciada por Simeão trespassou o seu coração materno enquanto presenciava a agonia do seu único e querido Filho, sacrificado por nossos pecados."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "dolorosos-5-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "dolorosos-5-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "dolorosos-5-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "dolorosos-5-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "gloriosos": {
+      "dias": [
+        "domingo",
+        "quarta"
+      ],
+      "tipo": "grupo",
+      "repeticoes": 1,
+      "sequencia": [
+        {
+          "id": "gloriosos-misterio-1",
+          "tipo": "grupo",
+          "ordem": 1,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "A Ressurreição",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "gloriosos-1-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "A Ressurreição",
+                "texto": "A RESSUREIÇÃO Bem cedo, na manhã do primeiro domingo da Páscoa, Jesus ressuscitou. Algumas mulheres foram ao Seu sepulcro e encontraram a pedra removida. Então, um anjo lhes disse que Jesus não estava mais ali... segundo a Sua própria profecia, havia ressuscitado!"
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "gloriosos-1-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gloriosos-1-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "gloriosos-1-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gloriosos-1-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "gloriosos-misterio-2",
+          "tipo": "grupo",
+          "ordem": 2,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "A Ascensão",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "gloriosos-2-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "A Ascensão",
+                "texto": "A Igreja celebra a ascensão quarenta dias depois da ressurreição. Jesus deu as últimas instruções aos discípulos no jardim das Oliveiras e os abençoou. Ali encontrava-se também Nossa Senhora que, juntamente com os Apóstolos, fixava os olhos Nele enquanto se elevava aos céus."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "gloriosos-2-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gloriosos-2-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "gloriosos-2-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gloriosos-2-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "gloriosos-misterio-3",
+          "tipo": "grupo",
+          "ordem": 3,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "A Vinda do Espírito Santo",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "gloriosos-3-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "A Vinda do Espírito Santo",
+                "texto": "Dez dias após a Ascensão, os apóstolos estavam reunidos no Cenáculo. De repente, ouviram um vento fortíssimo e línguas de fogo pousaram sobre eles. Assim, o Senhor lhes enviou o Espírito Santo que havia prometido."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "gloriosos-3-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gloriosos-3-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "gloriosos-3-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gloriosos-3-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "gloriosos-misterio-4",
+          "tipo": "grupo",
+          "ordem": 4,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "A Assunção",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "gloriosos-4-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "A Assunção",
+                "texto": "Por um privilégio único, a Virgem Maria foi preservada de toda a mancha do pecado e concebida imaculada. Por conseguinte, alguns anos após a ascensão de seu Filho, foi levada em corpo e alma ao céu pelos anjos de Deus."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "gloriosos-4-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gloriosos-4-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "gloriosos-4-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gloriosos-4-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "gloriosos-misterio-5",
+          "tipo": "grupo",
+          "ordem": 5,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "A Coroação de Nossa Senhora",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "gloriosos-5-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "A Coroação de Nossa Senhora",
+                "texto": "Coroada Rainha do Céu por seu Filho, Nossa Senhora reina lá eternamente. Mediante a sua intercessão com Cristo Rei, sempre rogará por nós para que alcancemos a vida eterna. Comprou-nos pelo Fruto do seu ventre no sacrifício da Cruz."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "gloriosos-5-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gloriosos-5-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "gloriosos-5-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "gloriosos-5-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "luminosos": {
+      "dias": [
+        "quinta"
+      ],
+      "tipo": "grupo",
+      "repeticoes": 1,
+      "sequencia": [
+        {
+          "id": "luminosos-misterio-1",
+          "tipo": "grupo",
+          "ordem": 1,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "O Batismo no Rio Jordão",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "luminosos-1-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "O Batismo no Rio Jordão",
+                "texto": "O BATISMO NO RIO JORDÃO Neste mistério contemplamos Seu batismo. Enquanto Cristo desce à água do rio, como inocente que se faz pecador por nós, o céu abre-se e a voz do Pai proclama-o Filho dileto, ao mesmo tempo que o Espírito vem sobre Ele para investi-lo na missão que o espera."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "luminosos-1-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "luminosos-1-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "luminosos-1-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "luminosos-1-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "luminosos-misterio-2",
+          "tipo": "grupo",
+          "ordem": 2,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "Bodas de Caná",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "luminosos-2-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "Bodas de Caná",
+                "texto": "Neste mistério contemplamos o início dos sinais em Caná, quando Cristo, transformando a água em vinho, abre à fé o coração dos discípulos graças à intervenção de Maria, a primeira entre os crentes."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "luminosos-2-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "luminosos-2-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "luminosos-2-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "luminosos-2-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "luminosos-misterio-3",
+          "tipo": "grupo",
+          "ordem": 3,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "Anúncio do Reino de Deus e o Convite à Conversão",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "luminosos-3-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "Anúncio do Reino de Deus e o Convite à Conversão",
+                "texto": "ANÚNCIO DO REINO DE DEUS E O CONVITE À CONVERSÃO Neste mistério contemplamos a pregação com a qual Jesus anuncia o advento do Reino de Deus e convida à conversão, perdoando os pecados de quem a Ele se dirige com humilde confiança, início do ministério de misericórdia que Ele prosseguirá exercendo até ao fim do mundo, especialmente através do sacramento da Reconciliação confiado à sua Igreja."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "luminosos-3-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "luminosos-3-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "luminosos-3-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "luminosos-3-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "luminosos-misterio-4",
+          "tipo": "grupo",
+          "ordem": 4,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "A Transfiguração",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "luminosos-4-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "A Transfiguração",
+                "texto": "Neste mistério da luz por excelência, contemplamos a Transfiguração que, segundo a tradição, se deu no Monte Tabor. A glória da Divindade reluz no rosto de Cristo, enquanto o Pai o acredita aos Apóstolos extasiados para que o \"escutem\" (cf. Lc 9, 35 par) e se disponham a viver com Ele o momento doloroso da Paixão, a fim de chegarem com Ele à glória da Ressurreição e a uma vida transfigurada pelo Espírito Santo."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "luminosos-4-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "luminosos-4-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "luminosos-4-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "luminosos-4-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "luminosos-misterio-5",
+          "tipo": "grupo",
+          "ordem": 5,
+          "repeticoes": 1,
+          "contador": {
+            "atual": "{{atual}}",
+            "total": "{{total}}",
+            "texto": "Mistério {atual}/{total}"
+          },
+          "conteudo": {
+            "titulo": "A Instituição da Eucaristia, Expressão Sacramental do Mistério Pascal",
+            "referencia_biblica": "",
+            "texto_biblico": ""
+          },
+          "sequencia": [
+            {
+              "id": "luminosos-5-meditacao",
+              "tipo": "meditacao",
+              "conteudo": {
+                "titulo": "A Instituição da Eucaristia, Expressão Sacramental do Mistério Pascal",
+                "texto": "A INSTITUIÇÃO DA EUCARISTIA, EXPRESSÃO SACRAMENTAL DO MISTÉRIO PASCAL Neste mistério, contemplamos, enfim, a instituição da Eucaristia, na qual Cristo Se faz alimento com o seu Corpo e o seu Sangue sob os sinais do pão e do vinho, testemunhando \"até ao extremo\" o seu amor pela humanidade ( Jo 13, 1), por cuja salvação Se oferecerá em sacrifício."
+              },
+              "repeticoes": 1
+            },
+            {
+              "id": "luminosos-5-pai_nosso",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Pai-Nosso",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "luminosos-5-ave_maria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Ave-Maria",
+                "texto": ""
+              },
+              "repeticoes": 10,
+              "configuracao": {
+                "mostrar_contador": true,
+                "contador": {
+                  "texto": "{{atual}}/{{total}}"
+                }
+              }
+            },
+            {
+              "id": "luminosos-5-gloria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Glória ao Pai",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            },
+            {
+              "id": "luminosos-5-jaculatoria",
+              "tipo": "oracao",
+              "conteudo": {
+                "titulo": "Jaculatória",
+                "texto": ""
+              },
+              "repeticoes": 1,
+              "configuracao": {
+                "mostrar_contador": false,
+                "contador": null
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "oracoes_finais": [
+    {
+      "id": "agradecimento",
+      "tipo": "oracao",
+      "conteudo": {
+        "titulo": "Agradecimento",
+        "texto": "Infinitas graças vos damos, soberana Rainha, pelos benefícios que todos os dias recebemos de vossas mãos liberais. Dignai-vos, agora e sempre, tomar-nos debaixo de vosso poderoso amparo e para mais nos obrigar, vos saudamos com uma:"
+      },
+      "repeticoes": 1
+    },
+    {
+      "id": "salve_rainha",
+      "tipo": "oracao",
+      "conteudo": {
+        "titulo": "Salve Rainha",
+        "texto": "Salve, Rainha, Mãe de misericórdia, vida, doçura e esperança nossa, salve! A vós bradamos os degredados filhos de Eva. A vós suspiramos, gemendo e chorando, neste vale de lágrimas. Ei-a, pois, advogada nossa: esses vossos olhos misericordiosos a nós volvei, e depois deste desterro, mostrai-nos Jesus, bendito fruto do vosso ventre, ó clemente, ó piedosa, ó doce e sempre Virgem Maria. Rogai por nós, Santa Mãe de Deus, para que sejamos dignos das promessas de Cristo. Amém."
+      },
+      "repeticoes": 1
+    },
+    {
+      "id": "oracao_final",
+      "tipo": "oracao",
+      "conteudo": {
+        "titulo": "Oracao Final",
+        "texto": "Ó Deus, Vós nos concedeis recordar e celebrar com fé os mistérios da salvação, realizada por vosso filho. Que os Vossos filhos apoiados na reza do Rosário, possam conservar e meditar em seus corações as alegrias, os sofrimentos e a glória de Jesus, com Maria sua Mãe. Nós Vos pedimos pelo mesmo Jesus, Vosso Filho, na unidade do Espírito Santo. Amém"
+      },
+      "repeticoes": 1
+    }
+  ],
+  "fontes_locais": [
+    "misterios_alegria.htm",
+    "misterios_dor.htm",
+    "misterios_gloria.htm",
+    "misterios_luz.htm",
+    "ajuda_rosario.htm"
+  ],
+  "observacoes": [
+    "Os quatro conjuntos de mistérios foram estruturados a partir dos HTML fornecidos.",
+    "A ajuda_rosario.htm contém recomendações de São João Paulo II sobre a enunciação do mistério, a Palavra de Deus e o silêncio.",
+    "Pai-Nosso e Ave-Maria são incluídos em texto tradicional para tornar o JSON utilizável; nos HTML dos mistérios, eles aparecem principalmente como títulos/instruções."
+  ],
+  "fluxo": {
+    "tipo": "selecao_por_condicao",
+    "condicao": "dia_da_semana",
+    "opcoes": [
+      {
+        "quando": [
+          "domingo",
+          "quarta"
+        ],
+        "usar": "gloriosos"
+      },
+      {
+        "quando": [
+          "segunda",
+          "sábado"
+        ],
+        "usar": "gozosos"
+      },
+      {
+        "quando": [
+          "terça",
+          "sexta"
+        ],
+        "usar": "dolorosos"
+      },
+      {
+        "quando": [
+          "quinta"
+        ],
+        "usar": "luminosos"
+      }
+    ],
+    "sequencia": [
+      {
+        "referencia": "oracoes_iniciais"
+      },
+      {
+        "referencia": "misterios_selecionados"
+      },
+      {
+        "referencia": "oracoes_finais"
+      }
+    ]
+  },
+  "padroes_de_repeticao": {
+    "ave_marias_por_misterio": {
+      "tipo": "repeticao",
+      "quantidade_padrao": 10,
+      "contador": "{{atual}}/{{total}}"
+    },
+    "misterios_por_terco": {
+      "tipo": "grupo",
+      "quantidade_padrao": 5,
+      "contador": "Mistério {{atual}}/{{total}}"
+    }
+  }
+}
